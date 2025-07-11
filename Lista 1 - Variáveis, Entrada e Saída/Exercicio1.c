@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*Elabore um programa que escreva as mensagens “Início do programa” e
-“Fim” na tela, uma em cada linha, usando apenas um comando printf().*/
+/*Elabore um programa que escreva as mensagens â€œInÃ­cio do programaâ€ e
+â€œFimâ€ na tela, uma em cada linha, usando apenas um comando printf().*/
 
 int main () {
     printf("Inicio do programa\nFim\n");
