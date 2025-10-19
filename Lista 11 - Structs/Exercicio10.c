@@ -22,20 +22,19 @@ int main () {
     for (i=0;i<5;i++) {
         printf("\n---------------ATLETA %d---------------\n", i+1);
         printf("Nome: ");
-        scanf("%49[^\n]s", a[i].nome);
-        setbuf(stdin, NULL);
+        getchar();
+        fgets(a[i].nome,50,stdin);
+        a[i].nome[strcspn(a[i].nome, "\n")]='\0';
 
         printf("Esporte: ");
-        scanf("%19[^\n]s", a[i].esporte);
-        setbuf(stdin, NULL);
+        fgets(a[i].esporte,20,stdin);
+        a[i].esporte[strcspn(a[i].esporte, "\n")]='\0';
 
         printf("Idade: ");
         scanf("%d", &a[i].idade);
-        setbuf(stdin, NULL);
 
         printf("Altura: ");
         scanf("%f", &a[i].altura);
-        setbuf(stdin, NULL);
     }
 
     for (i = 0; i < 4; i++) {
